@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab №5</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/add-form.css">
+	<link rel="stylesheet" type="text/css" href="css/edit-form.css">
+	<link rel="stylesheet" type="text/css" href="css/error-message.css">
+</head>
+<body>
+	<div class="main">
+		<span class="park-name">AUTOPARK - Lorem ipsum</span>
+		<div class="car-interface">
+			<div class="section-1">
+				<div class="selected-car-info">
+					<ul>
+						<li><span class="charact">Lorem Ipsum</span>
+								<span class="value">X-100</span></li>
+						<li><span class="charact">TYPE:</span>
+								<span class="value">dolor sit</span></li>
+						<li><span class="charact">WEIGHT:</span>
+								<span class="value">77777 kg</span></li>
+						<li><span class="charact">POWER:</span>
+								<span class="value">7777 hp</span></li>
+						<li><span class="charact">PETROL VOLUME:</span>
+								<span class="value">777 l.</span></li>
+						<li><span class="charact">NITRO VOLUME:</span>
+								<span class="value">777 l.</span></li>
+						<li><span class="charact">PRICE:</span>
+								<span class="value">77777 y.e.</span></li>
+					</ul>
+				</div>
+				<div class="add-car-btn" id="add">
+					<div class="add-btn btn">
+						<span>Добавить машину</span>
+					</div>
+				</div>
+			</div>
+			<div class="section-2">
+				<span class="car-name">CARS</span>
+				<div class="car-list">
+					<div class="choose-car" id="edit">
+						<ul>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+							<li class="scroll-element">
+									<span class="title"><span class="name">Lorem Ipsum</span> - <span class="price">77777y.e.</span></span>
+									<span class="edit-btn"></span>
+									<span class="delete-btn"></span>
+							</li>
+						</ul>
+					</div>
+					<div class="scroll-section">
+						<div class="scroll-btn scroll-up">
+							<div></div>
+						</div>
+						<div class="scroll-btn scroll-down">
+							<div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="park-info">
+			<div class="info capacity">
+				<div>
+					<span class="charact">Park capacity:</span>
+					<span class="cur-capacity">8</span>/<span class="max-capacity">8</span>
+				</div>
+			</div>
+			<div class="info price">
+				<div>
+					<span class="charact">Total price:</span>
+					<span class="total-price">77777 y.e.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="add-form-wrap">
+		<div class="add-form">
+			<div class="form-window">
+				<div class="add-section">
+					<ul class="header">
+						<li class="title">NEW CAR</li>
+						<li></li>
+					</ul>
+					<div class="add-charact-wrap">
+						<ul class="add-charact">
+							<li class="name charact">NAME: 
+								<span class="input-form">
+									<input type="text" name="value">	
+								</span>
+							</li>
+							<li>
+								<ul class="characts">
+									<li>
+										<div class="type">
+											<span class="charact">TYPE:</span>
+											<span class="input-form">
+												<select name="value">
+													<option selected value="Abstract">Abstract</option>
+													<option value="Gasoline">Gasoline</option>
+													<option value="Nitro-Gasoline">Nitro-Gasoline</option>
+													<option value="Electric">Electric</option>
+												</select>
+											</span>
+										</div>
+										<div class="model">
+											<span class="charact">MODEL:</span>
+											<span class="input-form">
+												<input type="text" name="value">	
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="weight">
+											<span class="charact">WEIGTH:</span>
+											<span class="input-form">
+												<input type="text" name="value">	
+											</span>
+										</div>
+										<div class="horsepowers">
+											<span class="charact">POWER:</span>
+											<span class="input-form">
+												<input type="text" name="value">	
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="petrol-size battery-size">
+											<span class="charact">FUELCP:</span>
+											<span class="input-form">
+												<input type="text" name="value">	
+											</span>
+										</div>
+										<div class="nitro-size">
+											<span class="charact">NITRO:</span>
+											<span class="input-form">
+												<input type="text" name="value">	
+											</span>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="confirm-section">
+					<div class="ok-btn btn" id="apply-submit">
+						<span>OK</span>
+					</div>
+					<div class="cancel-btn btn" id="apply-close">
+						<span>Cancel</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="dist/app.js"></script>
+</body>
+</html>
