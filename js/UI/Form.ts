@@ -12,6 +12,7 @@ import * as WindowMain from './Window';
 	Fuelcp/battery - число До 999
 	Nitro - число до 99 
 	Price - число, должно выходить не более 9999, округлять до сотых
+	Форма принимает только положительные значения
 
 	data[0] - type,
 	data[1] - name,
@@ -31,18 +32,34 @@ export function CheckValidation() {
 	switch (data[0]) {
 		case 'Abstract':
 		HasEmpty(data, 5);
+		for (let i = 3; i < 5; i++) {
+			if(data[i] <= 0) SendErrorMsg('10');
+			if(!isValid) return isValid;
+		}
 		break;
 
 		case 'Gasoline':
 		HasEmpty(data, 6);
+		for (let i = 3; i < 6; i++) {
+			if(data[i] <= 0) SendErrorMsg('10');
+			if(!isValid) return isValid;
+		}
 		break;
 
 		case 'Nitro-Gasoline':
 		HasEmpty(data, 7);
+		for (let i = 3; i < 7; i++) {
+			if(data[i] <= 0) SendErrorMsg('10');
+			if(!isValid) return isValid;
+		}
 		break;
 
 		case 'Electric':
 		HasEmpty(data, 6);
+		for (let i = 3; i < 6; i++) {
+			if(data[i] <= 0) SendErrorMsg('10');
+			if(!isValid) return isValid;
+		}
 		break;
 	}
 	if(!isValid) return isValid;
@@ -133,5 +150,6 @@ export function SendErrorMsg(errorId:any) {
 		case '8.1': alert('Объем нитро должен быть числом!'); isValid = false; break;
 		case '8.2': alert('Объем нитро должен быть менее 100 l.!'); isValid = false; break;
 		case '9': alert('Автопарк переполнен!'); isValid = false; break;
+		case '10': alert('Все значения должны быть положительными!'); isValid = false; break;
 	}
 }

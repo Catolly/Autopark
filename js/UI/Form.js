@@ -13,6 +13,7 @@ var WindowMain = require("./Window");
     Fuelcp/battery - число До 999
     Nitro - число до 99
     Price - число, должно выходить не более 9999, округлять до сотых
+    Форма принимает только положительные значения
 
     data[0] - type,
     data[1] - name,
@@ -29,15 +30,39 @@ function CheckValidation() {
     switch (data[0]) {
         case 'Abstract':
             HasEmpty(data, 5);
+            for (var i = 3; i < 5; i++) {
+                if (data[i] <= 0)
+                    SendErrorMsg('10');
+                if (!isValid)
+                    return isValid;
+            }
             break;
         case 'Gasoline':
             HasEmpty(data, 6);
+            for (var i = 3; i < 6; i++) {
+                if (data[i] <= 0)
+                    SendErrorMsg('10');
+                if (!isValid)
+                    return isValid;
+            }
             break;
         case 'Nitro-Gasoline':
             HasEmpty(data, 7);
+            for (var i = 3; i < 7; i++) {
+                if (data[i] <= 0)
+                    SendErrorMsg('10');
+                if (!isValid)
+                    return isValid;
+            }
             break;
         case 'Electric':
             HasEmpty(data, 6);
+            for (var i = 3; i < 6; i++) {
+                if (data[i] <= 0)
+                    SendErrorMsg('10');
+                if (!isValid)
+                    return isValid;
+            }
             break;
     }
     if (!isValid)
@@ -180,6 +205,10 @@ function SendErrorMsg(errorId) {
             break;
         case '9':
             alert('Автопарк переполнен!');
+            isValid = false;
+            break;
+        case '10':
+            alert('Все значения должны быть положительными!');
             isValid = false;
             break;
     }

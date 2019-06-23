@@ -21,7 +21,7 @@ function On() {
             RightSide.Update();
             var ALE = WindowMain.GetActiveLiElem();
             if (ALE != undefined)
-                ALE.onclick(); //Смещаем вниз выбранный элемент, содержащий машину
+                ALE.onclick();
         }
     };
 }

@@ -1,0 +1,45 @@
+.error-msg-wrap {
+
+	height: 100%;
+	width: 100%;
+	max-width: 750px;
+	min-width: 750px;
+	position: absolute;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.error-msg {
+	height: 320px;
+	width: 100%;
+	max-height: 320px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: url(../images/dialog_1.png) no-repeat;
+	background-size: contain;
+	margin: auto;
+}
+
+.msg {
+	border: 1px solid red;
+
+	min-height: 30%;
+	min-width: 
+ 	display: inline-block;
+	margin: auto;
+	font-size: 1.5em;
+	margin-top: 12%;
+	margin-left: 10%;
+}
+
+.confirm-btn {
+	border: 1px solid red;
+
+	min-height: 30%;
+	min-width: 
+	display: inline-block;
+	margin: auto;
+	margin-top: 12%;
+	margin-right: 10%;
+}
